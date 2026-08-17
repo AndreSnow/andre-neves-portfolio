@@ -23,6 +23,7 @@ Planejamento inicial. A implementação do Laravel ainda não foi iniciada.
 
 ## Documentação
 
+- [Índice da documentação](docs/index.md)
 - [Visão do produto](docs/produto/visao.md)
 - [Requisitos iniciais](docs/produto/requisitos.md)
 - [Visão da arquitetura](docs/arquitetura/visao-geral.md)

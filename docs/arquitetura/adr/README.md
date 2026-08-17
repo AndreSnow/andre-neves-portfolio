@@ -16,3 +16,4 @@ mudança relevante deve ser registrada por um novo ADR que substitua o anterior.
 - [ADR-0000: governança da documentação](0000-governanca-da-documentacao.md)
 - [ADR-0001: monólito Laravel renderizado no servidor](0001-monolito-laravel.md)
 - [ADR-0002: conteúdo estruturado e administrável](0002-conteudo-estruturado.md)
+- [ADR-0003: arquitetura compatível com hospedagem compartilhada](0003-restricoes-da-hospedagem.md)

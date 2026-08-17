@@ -28,8 +28,9 @@ Painel administrativo
 
 ## Limites
 
-- nenhuma fila ou processo residente será requisito para funcionamento;
-- tarefas recorrentes deverão funcionar via cron ou execução sob demanda;
+- não haverá filas, workers, cron ou processos residentes;
+- operações serão síncronas, limitadas e iniciadas por uma requisição
+  explícita ou pelo processo de deploy;
 - o deploy não dependerá de Node.js na hospedagem;
 - integrações externas deverão degradar de forma segura;
 - logs, uploads e eventos terão limites de retenção.
@@ -48,6 +49,9 @@ Painel administrativo
 - versões mínimas de PHP e Laravel suportadas pela hospedagem;
 - biblioteca e estratégia de geração do PDF;
 - painel administrativo adotado;
-- disponibilidade de SSH, cron e estrutura de diretórios da Hostinger;
+- disponibilidade de SSH e estrutura de diretórios da Hostinger;
 - fluxo de homologação e mecanismo final de deploy;
 - modelo detalhado de traduções e conteúdo.
+
+Os recursos publicados do plano e o checklist de verificação da assinatura estão
+registrados em [Hospedagem de produção](../operacao/hospedagem.md).

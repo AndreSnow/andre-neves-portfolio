@@ -26,6 +26,10 @@ sua arquitetura e o caminho planejado para entregá-lo.
 
 - [Visão geral](arquitetura/visao-geral.md): contexto, componentes, limites e
   decisões ainda pendentes;
+- [Geração de PDF e performance](arquitetura/geracao-de-pdf-e-performance.md):
+  arquivo pré-gerado, limites e estratégia de cache;
+- [Segurança e privacidade](arquitetura/seguranca-e-privacidade.md): proteção do
+  repositório público, dados profissionais e dados de visitantes;
 - [Registros de decisão arquitetural](arquitetura/adr/README.md): índice e regras
   dos ADRs;
 - [ADR-0000](arquitetura/adr/0000-governanca-da-documentacao.md): governança da
@@ -34,11 +38,18 @@ sua arquitetura e o caminho planejado para entregá-lo.
   renderizado no servidor;
 - [ADR-0002](arquitetura/adr/0002-conteudo-estruturado.md): conteúdo estruturado
   e administrável.
+- [ADR-0003](arquitetura/adr/0003-restricoes-da-hospedagem.md): arquitetura
+  compatível com hospedagem compartilhada.
 
 ## Gestão
 
 - [Roadmap inicial](gestao/roadmap.md): descoberta, fundação técnica, MVP,
   lançamento e evolução posterior.
+
+## Operação
+
+- [Hospedagem de produção](operacao/hospedagem.md): capacidades do plano
+  Business, restrições e validações pendentes no hPanel.
 
 ## Estado atual
 

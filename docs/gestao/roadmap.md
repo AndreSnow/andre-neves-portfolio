@@ -10,8 +10,8 @@
 
 ## Fase 1 — fundação técnica
 
-- iniciar Laravel, ambiente local e MySQL;
-- configurar quality gate e CI;
+- [x] iniciar Laravel, ambiente local e MySQL;
+- [x] configurar quality gate e CI;
 - implementar autenticação administrativa e 2FA;
 - definir modelos, permissões, cache, backup e auditoria.
 

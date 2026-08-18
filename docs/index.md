@@ -40,11 +40,15 @@ sua arquitetura e o caminho planejado para entregá-lo.
   e administrável.
 - [ADR-0003](arquitetura/adr/0003-restricoes-da-hospedagem.md): arquitetura
   compatível com hospedagem compartilhada.
+- [ADR-0004](arquitetura/adr/0004-stack-inicial.md): PHP, Laravel, Composer e
+  banco adotados no desenvolvimento e no CI.
 
 ## Gestão
 
 - [Roadmap inicial](gestao/roadmap.md): descoberta, fundação técnica, MVP,
   lançamento e evolução posterior.
+- [Padrões de commit](gestao/padroes-de-commit.md): formato, tipos, escopos e
+  cuidados exigidos no histórico público.
 
 ## Operação
 
@@ -53,10 +57,9 @@ sua arquitetura e o caminho planejado para entregá-lo.
 
 ## Estado atual
 
-O projeto está na fase de descoberta e fundação. A aplicação Laravel ainda não
-foi iniciada. Antes disso, serão validados os recursos da hospedagem e registradas
-as decisões essenciais sobre painel, PDF, analytics, privacidade, segurança e
-CI/CD.
+O projeto está na fase de fundação técnica. O monólito Laravel foi iniciado com
+Docker e quality gate, enquanto painel, PDF, analytics e modelo de conteúdo ainda
+dependem de decisões e implementações próprias.
 
 ## Convenções
 

@@ -49,6 +49,8 @@ sua arquitetura e o caminho planejado para entregá-lo.
   lançamento e evolução posterior.
 - [Padrões de commit](gestao/padroes-de-commit.md): formato, tipos, escopos e
   cuidados exigidos no histórico público.
+- [Qualidade e TDD](gestao/qualidade-e-tdd.md): ciclo de desenvolvimento,
+  estratégia de testes, segurança e uso do Laravel PAO.
 
 ## Operação
 

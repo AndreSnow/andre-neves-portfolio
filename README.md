@@ -49,6 +49,7 @@ projetos locais.
 - [ADRs](docs/arquitetura/adr/README.md)
 - [Roadmap](docs/gestao/roadmap.md)
 - [Padrões de commit](docs/gestao/padroes-de-commit.md)
+- [Qualidade e TDD](docs/gestao/qualidade-e-tdd.md)
 
 ## Licença
 

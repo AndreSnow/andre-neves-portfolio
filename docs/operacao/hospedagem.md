@@ -56,10 +56,10 @@ cron nem processamento assíncrono.
 
 Antes de iniciar a implementação ou definir versões, confirmar:
 
-- [ ] versões de PHP oferecidas para o domínio;
+- [x] PHP 8.5 selecionado para o domínio;
 - [ ] versão efetiva do MySQL;
 - [ ] extensões PHP necessárias ao Laravel e à biblioteca de PDF;
-- [ ] versão efetiva do Composer 2;
+- [ ] versão efetiva do Composer 2 no servidor;
 - [ ] acesso SSH habilitado e autenticação por chave;
 - [ ] possibilidade de apontar o document root diretamente para `public`;
 - [ ] frequência, retenção e restauração dos backups da Hostinger;

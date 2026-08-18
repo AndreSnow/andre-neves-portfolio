@@ -46,12 +46,14 @@ Painel administrativo
 
 ## Decisões pendentes
 
-- versões mínimas de PHP e Laravel suportadas pela hospedagem;
 - biblioteca e estratégia de geração do PDF;
 - painel administrativo adotado;
 - disponibilidade de SSH e estrutura de diretórios da Hostinger;
 - fluxo de homologação e mecanismo final de deploy;
 - modelo detalhado de traduções e conteúdo.
+
+PHP 8.5, Laravel 13, Composer 2 e MySQL 5.7 para desenvolvimento e CI foram
+definidos no [ADR-0004](adr/0004-stack-inicial.md).
 
 Os recursos publicados do plano e o checklist de verificação da assinatura estão
 registrados em [Hospedagem de produção](../operacao/hospedagem.md).

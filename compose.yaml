@@ -1,0 +1,45 @@
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    working_dir: /var/www/html
+    user: "1000:1000"
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8088:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  assets:
+    image: node:24-alpine
+    working_dir: /app
+    user: "1000:1000"
+    volumes:
+      - .:/app
+    ports:
+      - "5188:5173"
+    command: sh -c "npm ci --ignore-scripts && npm run dev -- --host=0.0.0.0"
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: portfolio
+      MYSQL_ROOT_PASSWORD: root_dev_only
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: portfolio_dev_only
+    ports:
+      - "3308:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-proot_dev_only"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  dbdata:
